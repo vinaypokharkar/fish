@@ -17,7 +17,6 @@ const HomeScreen = ({ navigation }) => (
         <HomeButton title="Heatmap" icon="map-outline" onPress={() => navigation.navigate('Heatmap')} />
         <HomeButton title="My Tracker" icon="navigate-outline" onPress={() => navigation.navigate('Tracker')} />
         <HomeButton title="News & Alerts" icon="notifications-outline" onPress={() => navigation.navigate('News')} />
-        <HomeButton title="SOS" icon="warning-outline" onPress={() => navigation.navigate('SOS')} />
         <HomeButton title="Record Catch" icon="camera-outline" onPress={() => navigation.navigate('CatchRecord')} />
       </View>
     </ScrollView>
