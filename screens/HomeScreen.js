@@ -11,6 +11,15 @@ const HomeScreen = ({ navigation }) => (
         <Text style={styles.greeting}>Good Morning, Fisherman!</Text>
         <Text style={styles.header}>Home Dashboard</Text>
       </View>
+      <View style={{ alignItems: 'center' }}>
+        <HomeButton
+          title="SOS"
+          icon="warning-outline"
+          onPress={() => navigation.navigate('SOS')}
+          buttonColor={COLORS.red}
+          buttonStyle={styles.sosButton}
+        />
+      </View>
       <WeatherWidget />
       <View style={styles.grid}>
         <HomeButton title="Plan Trip" icon="calendar-outline" onPress={() => navigation.navigate('TripPlanning')} />
@@ -50,6 +59,15 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginTop: 10,
     paddingHorizontal: 10,
+  },
+  sosButton: {
+    backgroundColor: COLORS.red,
+    marginHorizontal: 20,
+    marginBottom: 10,
+    borderRadius: 10,
+    height: 60,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 

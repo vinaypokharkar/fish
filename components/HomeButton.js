@@ -3,8 +3,8 @@ import { TouchableOpacity, Text, StyleSheet, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { COLORS } from '../constants/colors';
 
-const HomeButton = ({ title, icon, onPress }) => (
-  <TouchableOpacity style={styles.button} onPress={onPress}>
+const HomeButton = ({ title, icon, onPress, buttonStyle, buttonColor }) => (
+  <TouchableOpacity style={[styles.button, buttonStyle, buttonColor && { backgroundColor: buttonColor }]} onPress={onPress}>
     <View style={styles.iconContainer}>
       <Ionicons name={icon} size={40} color={COLORS.primary} />
     </View>

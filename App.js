@@ -84,8 +84,6 @@ const MainTabs = () => (
           iconName = focused ? 'home' : 'home-outline';
         } else if (route.name === 'Heatmap') {
           iconName = focused ? 'map' : 'map-outline';
-        } else if (route.name === 'Tracker') {
-          iconName = focused ? 'navigate' : 'navigate-outline';
         } else if (route.name === 'Compass') {
           iconName = focused ? 'compass' : 'compass-outline';
         } else if (route.name === 'Profile') {
@@ -102,7 +100,6 @@ const MainTabs = () => (
       {(props) => <HomeStack {...props} />}
     </Tab.Screen>
     <Tab.Screen name="Heatmap" component={HeatmapScreen} />
-    <Tab.Screen name="Tracker" component={TrackerScreen} />
     <Tab.Screen name="Compass" component={CompassScreen} />
     <Tab.Screen name="Profile" component={ProfileScreen} />
   </Tab.Navigator>
