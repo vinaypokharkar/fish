@@ -53,7 +53,6 @@ const HomeStack = ({ navigation }) => (
     <Stack.Screen name="TripPlanning" component={TripPlanningScreen} />
     <Stack.Screen name="News" component={NewsScreen} />
     <Stack.Screen name="CatchRecord" component={CatchRecordScreen} />
-    <Stack.Screen name="CatchRecord" component={CatchRecordScreen} />
     <Stack.Screen name="NoFishingZone" component={NoFishingZoneScreen} />
     <Stack.Screen name="PotentialFishingZone" component={PotentialFishingZoneScreen} />
     <Stack.Screen name="GpsNavigation" component={GpsNavigationScreen} />
